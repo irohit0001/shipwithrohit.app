@@ -60,11 +60,21 @@ export default function ProjectsSection() {
               ))}
             </div>
             <div className="card-links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`GitHub repository for ${project.title}`}
+              >
                 GitHub
               </a>
               {project.live && (
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Live demo for ${project.title}`}
+                >
                   Live
                 </a>
               )}
