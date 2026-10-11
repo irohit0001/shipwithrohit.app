@@ -1,0 +1,3 @@
+## 2024-05-30 - Contextual ARIA labels for dynamic lists
+**Learning:** When generating lists of items (like project cards) with identical link text (e.g., "GitHub" or "Live"), screen reader users lose context when navigating by links alone.
+**Action:** Always inject dynamic content (like project title) into the `aria-label` for links within looped or mapped components to provide clear, contextual destinations.
